@@ -4,9 +4,7 @@
 # Parar serviço
 	/etc/init.d/cups-browsed stop
 
-# Alterar 
-	vim /etc/cups/cups-browsed.conf
-
+# Aplicando Configurações
 	sudo sed -i '/BrowseRemoteProtocols dnssd cups/d' /etc/cups/cups-browser.conf
 	sudo sed -i '41 iBrowseRemoteProtocols none' /etc/cups/cups-browser.conf
 
