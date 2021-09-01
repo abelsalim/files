@@ -1,12 +1,12 @@
-### Desabilitar instalação e publicação automática
+# Desabilitar instalação e publicação automática
 
 
-# Parando serviço
+### Parando serviço
 	/etc/init.d/cups-browsed stop
 
-# Aplicando Configurações
+### Aplicando Configurações
 	sudo sed -i '/BrowseRemoteProtocols dnssd cups/d' /etc/cups/cups-browser.conf
 	sudo sed -i '41 iBrowseRemoteProtocols none' /etc/cups/cups-browser.conf
 
-# Iniciando serviço
+### Iniciando serviço
 	/etc/init.d/cups-browsed start
