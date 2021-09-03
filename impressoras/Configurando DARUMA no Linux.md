@@ -12,12 +12,10 @@
 # Inserir a impressora no printers.conf
 
     sudo vim /etc/cups/printers.conf	
-    #(lembre-se alterar o numero da loja)
     
     }
-        <Printer cupom_02>
-        Info Daruma da Promoção Caminhões de Prêmios
-        Location Zorin
+        <Printer printer>
+        Location Linux
         DeviceURI serial:/dev/ttyACM0
         State Idle
         Type 4
