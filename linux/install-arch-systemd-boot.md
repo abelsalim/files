@@ -72,8 +72,7 @@
 
 ### Variável de linguagem
 
-	echo LANG=pt_BR.UTF-8 >> /etc/locale.conf                                                                                                                                                      
-                                                                                                                                                                                               
+	echo LANG=pt_BR.UTF-8 >> /etc/locale.conf                                                                                                                                                                          
 ### Linguagem de teclado                                                                                                                                                                         
 
 	echo KEYMAP=br-abnt2 >> /etc/vconsole.conf
