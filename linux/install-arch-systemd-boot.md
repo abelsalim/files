@@ -63,7 +63,8 @@
 ### Definir fuso horário e aplicar alteração
 
 	ln -sf /usr/share/zoneinfo/America/Fortaleza /etc/localtime
-	hwclock --systohc                                                                                                                                                   
+	hwclock --systohc
+	
 ### Localização
 
 	vim /etc/locale.gen # Defina a localidade
