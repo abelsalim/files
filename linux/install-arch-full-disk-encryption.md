@@ -52,9 +52,7 @@ w
 ```
 
 #### Crie o contêiner criptografado LUKS1 na partição Linux LUKS
-```
-cryptsetup luksFormat --type luks1 --use-random -S 1 -s 512 -h sha512 -i 5000 /dev/sda3
-```
+```cryptsetup luksFormat --type luks1 --use-random -S 1 -s 512 -h sha512 -i 5000 /dev/sda3```
 
 #### Abra o container (descriptografe-o e disponibilize em /dev/mapper/cryptlvm) 
 ```
