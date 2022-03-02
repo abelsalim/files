@@ -90,9 +90,10 @@ mkswap /dev/vg/swap
 
 #### Montar sistemas de arquivos
 ```
-mount /dev/sda2 /mnt
-mkdir /mnt/boot
-mount /dev/sda1 /mnt/boot
+mount /dev/vg/root /mnt
+mkdir /mnt/home
+mount /dev/vg/home /mnt/home
+swapon /dev/vg/swap
 ```
 
 ### Preparando a partição EFI
